@@ -1,5 +1,7 @@
  
  /*--TEST--*/
+@import 'variables';
+
 
  @mixin elf {
     display: flex;
@@ -7,8 +9,13 @@
     justify-content: center;
     background-color: $primary-color;
  }
+
+ @mixin couleur($couleur : $primary-color) {
+    color: $couleur;
+    background-color: $couleur;
+ }
  
-@import 'variables';
+
 
 
 /*--------------------------------------------*/ 
@@ -32,3 +39,16 @@ h1,.luc,h2,.not{
     color: yellow;
 }
 
+.carre{
+    width: 50%;
+    height: 300px;
+    border: 2px solid #000000;
+    @include couleur(rgba(40, 1, 216, 0.267));
+}
+
+.carre2{
+width: 50%;
+height: 200PX;
+border: 5PX solid #000000;
+@include couleur;
+}
