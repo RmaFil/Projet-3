@@ -1,1 +1,16 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .Dtitle1 {
+    width: 100%;
+    height: 65PX;
+  }
+  .Dtitle1-H {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Shrikhand", Arial, georgia, serif;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+$font-title: 'Shrikhand',Arial,georgia,serif;
+$font: 'Roboto', sans-serif;
+
+@mixin hei-wid ($wid,$hei){
+width: $wid;
+height: $hei;
+}
+
+@mixin flex-center {
+display: flex;
+justify-content: center;
+text-align: center; 
+}
