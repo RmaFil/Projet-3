@@ -2,19 +2,108 @@
 
 body{
     font-family: $font;
+    box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
 }
 
 
 @media screen and (max-width : 767px) {
 
 .Dtitle1{
-@include hei-wid (100%,65PX);
+@include hei-wid (100%,35PX);
+margin-top: 20px;
+border-bottom: 1px solid ;
 &-H{
   @include flex-center;
-  font-family: $font-title 
+  font-family: $font-title; 
+  font-size: x-large;
+}
+}
+
+.Dlocation{
+
+  @include hei-wid (100%,45px);
+  @include flex-center;
+  background-color: #eaeaea;
+  }
+  .fa-location-dot{
+    padding-right: 15px;
+  }
+
+  .nav1{
+    @include hei-wid(100%,290px);
+    @include flex-center;
+    flex-wrap: wrap;
+    background-color: $grey;
+
+    &-title2{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px 25% 0PX 25%;
+   
+  }
+  p{
+    padding: 0px 15% 0PX 15%;
+  }
+
+  &-btn01{
+    @include hei-wid(50%,50px);
+    background-color:$violet;
+    border: 1px solid $violet;
+    border-radius: 25PX 25PX;
+    @include flex-center;
+
+    a{
+      color: #fff;
+    }
+  }
+}
+
+.nav2{
+  @include hei-wid (100%, 445PX);
+  @include flex-center;
+  flex-wrap: wrap;
+&-title3{
+padding-left: 20PX;
+font-size: large;
+}
+
+}
+
+.conteneur{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include hei-wid(85%,70PX);
+  background-color: $grey;
+  border: 1px solid $grey;
+  border-radius: 20PX 20PX;
+  box-shadow: 0px 1px;
+  gap: 20px;
+  
+  
+&-number{
+  @include hei-wid (25px, 25px);
+  border: 1px solid #9356dc;
+  background-color: #9356dc;
+  border-radius: 25px;
+  
+  >p{
+color: #fff;
+display: flex;
+  }
+
+}
+  
+a{
+  color: black;
+    }
 }
 }
 
 
 
-}

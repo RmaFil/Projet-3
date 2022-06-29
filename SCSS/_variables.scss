@@ -1,6 +1,13 @@
 $font-title: 'Shrikhand',Arial,georgia,serif;
 $font: 'Roboto', sans-serif;
 
+$grey: #f6f6f6;
+$violet:#b762dc;
+
+
+
+
+
 @mixin hei-wid ($wid,$hei){
 width: $wid;
 height: $hei;
@@ -10,4 +17,5 @@ height: $hei;
 display: flex;
 justify-content: center;
 text-align: center; 
+align-items: center;
 }
