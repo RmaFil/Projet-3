@@ -5,7 +5,6 @@ body{
     box-sizing: border-box;
 }
 
-
 a{
   text-decoration: none;
 }
@@ -34,27 +33,34 @@ border-bottom: 1px solid ;
     padding-right: 15px;
   }
 
+  /*---------NAV1-----------*/
+
+
   .nav1{
     @include hei-wid(100%,290px);
-    @include flex-center;
-    flex-wrap: wrap;
+   text-align: center;
+    
     background-color: $grey;
 
     &-title2{
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 30px 25% 0PX 25%;
+    padding: 40px 25% 20PX 25%;
    
   }
   p{
-    padding: 0px 15% 0PX 15%;
+    font-size: 1.1em;
+    padding: 0px 15% 30PX 15%;
   }
 
   &-btn01{
     @include hei-wid(50%,50px);
-    background-color:$violet;
+    background-color:#d96dda;
+    font-size: 1.1em;
+    margin-left: 115px;
     border: 1px solid $violet;
     border-radius: 25PX 25PX;
+    box-shadow: 1px 1px;
     @include flex-center;
 
     a{
@@ -63,15 +69,20 @@ border-bottom: 1px solid ;
   }
 }
 
+/*------------nav2-------------*/
+
+.nav-2-title3{
+  padding-left: 20PX;
+  margin-top: 40px;
+  font-size: 1.3em;
+  }
+
+
 .nav2{
   @include hei-wid (100%, 445PX);
   @include flex-center;
   flex-wrap: wrap;
-&-title3{
-padding-left: 20PX;
-font-size: large;
-}
-
+  
 }
 
 .conteneur{
@@ -101,8 +112,125 @@ display: flex;
   
 a{
   color: black;
+  font-size: 1.2em;
+  font-weight: 400;
     }
 }
+
+.fa-store{
+  color: #9356dc;
+}
+
+/*---------------SECTION-----------*/
+
+.section{
+  @include hei-wid (100%,1230PX);
+  background-color: $grey;
+
+&-Stitle{
+  padding-left: 20PX;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+}
+
+.Sconteneur{
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  a{
+    width: 90%
+  }
+}
+
+.article{
+  @include hei-wid (100%, 260px);
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20PX 20PX 20PX 20PX;
+  box-shadow: 0px 1px #000;
+  
+
+  &-img{
+    @include hei-wid(100%,175px);
+    object-fit: cover;
+    border-radius: 20PX 20PX 0PX 0PX;
+    
+  }
+
+  .new{
+    @include hei-wid (80px,25px);
+  position: relative;  
+  display: block;
+  background-color:#99e2d0;
+  color: #008766;
+  bottom: 60%;
+  left: 77%;
+  }
+}
+
+.litletitle{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  
+
+  +p{
+    color: #000;
+    font-size: large;
+    display: flex;
+    padding-left: 15px;
+  }
+}
+
+.litletitle2{
+  padding: 15PX 15PX ;
+}
+
+.fa-heart{
+ position: relative;
+height: 25px;
+ bottom: 20%;
+ left: 42%;
+color : #000
+ 
+}
+
+.footer{
+  @include hei-wid (100%,200PX);
+  background-color: #353535;
+
+  &-title{
+   
+    font-size: large;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: $font-title ;
+
+    a{
+      color :#FFF;
+    }
+  }
+
+  li{
+    margin-top: 15px;
+    padding-left: 15px;
+    color: #FFF;
+
+    a{
+      color : #fff
+    }
+  }
+  
+}
+
 }
 
 
