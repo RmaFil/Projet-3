@@ -1,17 +1,8 @@
+
 @import "variables";
 @import "desktop";
 
-body{
-    font-family: $font;
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto !important;
-   
-}
 
-a{
-  text-decoration: none;
-}
 
 
 @media screen and (max-width : 991px) {
