@@ -1,3 +1,14 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto !important;
+}
+
+a {
+  text-decoration: none;
+}
+
 .Dtitle1 {
   width: 100%;
   height: 60PX;
@@ -21,4 +32,64 @@
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section {
+  width: 100%;
+  height: 1150px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+  position: relative;
+  bottom: 50px;
+}
+section .section-cont {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Hcont {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Hcont-h1 {
+  font-size: x-large;
+  font-weight: 300;
+  margin-left: 30px;
+  font-family: "Shrikhand", Arial, georgia, serif;
+}
+.Hcont .fa-heart {
+  height: 25px;
+}
+
+.art {
+  width: 90%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.art-p {
+  font-size: 1.3em;
+  padding: 5px;
+  border-bottom: 4px solid #99e2d0;
+}
+.art a {
+  width: 100%;
+  display: block;
+}
+
+.art-cont {
+  width: 100%;
+  height: 70px;
+  background-color: #FFF;
 }/*# sourceMappingURL=style2.css.map */

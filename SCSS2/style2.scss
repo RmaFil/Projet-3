@@ -1,4 +1,15 @@
 @import "../SCSS/variables";
+body{
+    font-family: $font;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto !important;
+   
+  }
+  
+  a{
+  text-decoration: none;
+  }
 
 .Dtitle1{
     @include hei-wid (100%,60PX);
@@ -20,3 +31,64 @@ height: 25px
     object-fit: cover;
 }
 }    
+
+section{
+    @include hei-wid (100%, 1150px);
+     
+    background-color: #f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    bottom: 50px;
+
+.section-cont{
+@include hei-wid (100%, 1100px);
+@include flex-center;
+flex-wrap: wrap
+}
+
+}
+.Hcont{
+    @include hei-wid (90%,70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    &-h1{
+        font-size: x-large;
+        font-weight: 300;
+        margin-left: 30px;
+        font-family: $font-title    ;
+    }
+
+    .fa-heart{
+        height: 25px;
+    }
+}
+
+.art{
+    @include hei-wid (90%,320px);
+    @include flex-center;
+    flex-wrap: wrap;
+
+    &-p{
+        font-size: 1.3em;
+        padding: 5px;
+        border-bottom: 4px solid #99e2d0;
+        
+    }
+    a{
+        width: 100%;
+        display:block
+       
+    }
+}
+
+.art-cont{
+@include hei-wid (100%, 70px);
+background-color:#FFF
+}
+
+
+
+
