@@ -14,7 +14,6 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
-
   .Dtitle1 {
     width: 50%;
     height: 60PX;
@@ -28,7 +27,6 @@ a {
     width: 40%;
     height: 30px;
   }
-
   .Dlocation {
     width: 50%;
     height: 70px;
@@ -38,11 +36,9 @@ a {
     align-items: center;
     background-color: #eaeaea;
   }
-
   .fa-location-dot {
     padding-right: 15px;
   }
-
   /*---------NAV1-----------*/
   .nav1 {
     width: 50%;
@@ -87,7 +83,6 @@ a {
   .nav1-btn01 a {
     color: #fff;
   }
-
   /*------------nav2-------------*/
   .nav-2 {
     width: 50%;
@@ -99,7 +94,6 @@ a {
     margin-top: 40px;
     font-size: 1.4em;
   }
-
   .nav2 {
     width: 100%;
     height: 285PX;
@@ -110,7 +104,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-
   .conteneur {
     display: flex;
     justify-content: flex-start;
@@ -141,11 +134,9 @@ a {
     font-size: 1.2em;
     font-weight: 400;
   }
-
   .fa-store {
     color: #9356dc;
   }
-
   /*---------------SECTION-----------*/
   .section {
     width: 100%;
@@ -159,7 +150,6 @@ a {
     font-size: 1.7em;
     font-weight: bold;
   }
-
   .Sconteneur {
     display: flex;
     justify-content: center;
@@ -171,7 +161,6 @@ a {
   .Sconteneur a {
     width: 40%;
   }
-
   .article {
     width: 100%;
     height: 260px;
@@ -201,7 +190,6 @@ a {
     top: 20px;
     right: 15PX;
   }
-
   .litletitle {
     font-size: 1.3em;
     font-weight: bold;
@@ -215,7 +203,6 @@ a {
     display: flex;
     padding-left: 15px;
   }
-
   .fa-heart {
     position: relative;
     height: 25px;
@@ -223,7 +210,6 @@ a {
     left: 42%;
     color: #000;
   }
-
   .footer {
     width: 100%;
     height: 150PX;
@@ -251,16 +237,13 @@ a {
     color: #fff;
     font-size: 1.4em;
   }
-
   ul {
     display: flex;
     justify-content: space-evenly;
   }
-
   .fa-utensils {
     padding-right: 10px;
   }
-
   .fa-handshake-angle {
     padding-right: 10px;
     height: 12px;
@@ -281,7 +264,6 @@ a {
     width: 40%;
     height: 30px;
   }
-
   .Dlocation {
     width: 100%;
     height: 45px;
@@ -291,11 +273,9 @@ a {
     align-items: center;
     background-color: #eaeaea;
   }
-
   .fa-location-dot {
     padding-right: 15px;
   }
-
   /*---------NAV1-----------*/
   .nav1 {
     width: 100%;
@@ -339,7 +319,6 @@ a {
   .nav1-btn01 a {
     color: #fff;
   }
-
   /*------------nav2-------------*/
   .nav-2 {
     width: 100%;
@@ -350,7 +329,6 @@ a {
     margin-top: 40px;
     font-size: 1.4em;
   }
-
   .nav2 {
     width: 100%;
     height: 285PX;
@@ -361,7 +339,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-
   .conteneur {
     display: flex;
     justify-content: flex-start;
@@ -392,11 +369,9 @@ a {
     font-size: 1.2em;
     font-weight: 400;
   }
-
   .fa-store {
     color: #9356dc;
   }
-
   /*---------------SECTION-----------*/
   .section {
     width: 100%;
@@ -410,7 +385,6 @@ a {
     font-size: 1.7em;
     font-weight: bold;
   }
-
   .Sconteneur {
     display: flex;
     justify-content: center;
@@ -422,7 +396,6 @@ a {
   .Sconteneur a {
     width: 90%;
   }
-
   .article {
     width: 100%;
     height: 260px;
@@ -452,7 +425,6 @@ a {
     top: 20px;
     right: 15PX;
   }
-
   .litletitle {
     font-size: 1.3em;
     font-weight: bold;
@@ -466,7 +438,6 @@ a {
     display: flex;
     padding-left: 15px;
   }
-
   .fa-heart {
     position: relative;
     height: 25px;
@@ -474,7 +445,6 @@ a {
     left: 42%;
     color: #000;
   }
-
   /*------FOOTER---------*/
   .footer {
     width: 100%;
@@ -500,11 +470,9 @@ a {
   .footer li a {
     color: #fff;
   }
-
   .fa-utensils {
     padding-right: 10px;
   }
-
   .fa-handshake-angle {
     padding-right: 10px;
     height: 12px;

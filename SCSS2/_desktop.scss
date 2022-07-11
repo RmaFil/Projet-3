@@ -4,6 +4,7 @@
     box-sizing: border-box;
     max-width: 1400px;
     margin: 0 auto !important;
+  
    
   }
   
@@ -19,24 +20,30 @@
 
 
     .Dtitle1{
-        @include hei-wid (50%,60PX);
-        @include flex-center;
+        @include hei-wid (55%,60PX);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 10px;
-        position: relative;
+        gap: 30px;
+       
+      
         
         
         .fa-arrow-left{
-          position: absolute;
-          left: 100px;
-          height: 25px
+          height: 25px;
+          margin-left: 10px;
         }
     
         &-H{
-            @include hei-wid (40%, 30px);
+            @include hei-wid (30%, 30px);
+           
           }
+
     +.fran{
         @include hei-wid(100%, 200px);
         object-fit: cover;
+
        
     }
     }   
@@ -45,14 +52,16 @@
 
 
     section{
-        @include hei-wid (100%, 650px);
+        @include hei-wid (50%,850px);
         background-color: #f6f6f6;
-        position: relative; 
+       
        
     
     .section-cont{
-    @include hei-wid (100%, 520px);
+    @include hei-wid (100% 750px);
     display: flex;
+    flex-wrap: wrap
+    
     
     
    
@@ -60,23 +69,23 @@
     
     }
     .Hcont{
-        @include hei-wid (35%,70px);
-        display: flex;
-        position: absolute;
-         gap: 30px;
-        bottom:832px;
-       left: 950px;
-           
+  
+      @include hei-wid (100%,70px);
+      @include flex-center;
+      gap: 50px;
+      flex-wrap: wrap;
+    align-self: center;
+justify-self: center;
     
         &-h1{
-            font-size: xx-large;
+            font-size: 2.5em;
             font-weight: 300;
             margin-left: 20px;
             font-family: $font-title    ;
         }
     
         .fa-heart{
-            height: 25px;
+            height: 35px;
             margin-right: 10px;
             
         }
@@ -87,12 +96,12 @@
 
     
     .art{
-        @include hei-wid (50%,520px);
+        @include hei-wid (33%, 600px);
         @include flex-center;
         flex-wrap: wrap;
-       border: 1px solid #e7e7e7;
+ 
       
-       box-shadow: 2px 2px 2px #e7e7e7;
+      
       
     
         &-p{
@@ -111,8 +120,9 @@
     }
     
     .art-cont{
-    @include hei-wid (80%, 85px);
+    @include hei-wid (90%, 85px);
     background-color:#FFF;
+ 
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
     
@@ -142,8 +152,9 @@
     
     
     .cont-btn01{
-    @include hei-wid (100%,130px);
+    @include hei-wid (100%);
     @include flex-center;
+    background-color: $grey;
     
     
     .btn01{
@@ -165,8 +176,9 @@
     
     
     .footer{
-      @include hei-wid (100%,150PX);
+      @include hei-wid (100%,150px);
       background-color: #353535;
+      margin-top: 100px;
     
       &-title{
        display: flex;

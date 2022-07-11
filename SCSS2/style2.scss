@@ -1,7 +1,9 @@
 
-
+@import "../SCSS2/desktop";
 @import "../SCSS/variables";
-@import "desktop";
+
+
+
 
 
 @media screen and (max-width : 991px) {
@@ -11,6 +13,8 @@
     @include hei-wid (100%,60PX);
     @include flex-center;
     margin-top: 10px;
+ 
+   
     
     
     .fa-arrow-left{
