@@ -4,6 +4,7 @@
     box-sizing: border-box;
     max-width: 1400px;
     margin: 0 auto !important;
+    
   
    
   }
@@ -43,6 +44,7 @@
     +.fran{
         @include hei-wid(100%, 200px);
         object-fit: cover;
+       
 
        
     }
@@ -52,7 +54,7 @@
 
 
     section{
-        @include hei-wid (100%,870px);
+        @include hei-wid (100%,970px);
         background-color: #f6f6f6;
        
        
@@ -93,7 +95,9 @@ justify-self: center;
 
     /*---------ARTICLE------------*/
 
-
+section .artspe{
+    height: 765px;
+}
     
     .art{
         @include hei-wid (33%, 600px);
@@ -152,7 +156,7 @@ justify-self: center;
     
     
     .cont-btn01{
-    @include hei-wid (100%,200px);
+    @include hei-wid (100%,100px);
     @include flex-center;
     background-color: $grey;
     
