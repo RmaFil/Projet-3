@@ -1,0 +1,185 @@
+@import "../SCSS/variables";
+
+@import "desktop";
+
+
+
+@media screen and (max-width : 991px) {
+  
+
+.Dtitle1{
+    @include hei-wid (100%,60PX);
+    @include flex-center;
+    margin-top: 10px;
+ 
+   
+    
+    
+    .fa-arrow-left{
+position: absolute;
+left: 30px;
+height: 25px
+    }
+
+    &-H{
+        @include hei-wid (40%, 30px);
+      }
++.fran{
+    @include hei-wid(100%, 260px);
+    object-fit: cover;
+}
+}    
+
+section{
+    @include hei-wid (100%, 1250px);
+     margin-bottom: -50px !important;
+    background-color: #f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    bottom: 50px;
+
+.section-cont{
+@include hei-wid (100%, 1100px);
+@include flex-center;
+flex-wrap: wrap;
+gap: 20px
+}
+
+}
+.Hcont{
+    @include hei-wid (90%,70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    &-h1{
+        font-size: xx-large;
+        font-weight: 300;
+        margin-left: 20px;
+        font-family: $font-title    ;
+    }
+
+    .fa-heart{
+        height: 25px;
+        margin-right: 10px;
+        
+    }
+}
+
+.art{
+    @include hei-wid (90%,320px);
+    @include flex-center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &-p{
+        font-size: 1.3em;
+        padding: 5px;
+        border-bottom: 4px solid #99e2d0;
+      font-weight: 300;
+      align-self: flex-start;
+        
+    }
+    a{
+        width: 100%;
+        display:block
+       
+    }
+}
+
+.art-cont{
+@include hei-wid (100%, 75px);
+background-color:#FFF;
+border-radius: 20px 20px;
+box-shadow: 5px 5px 3px #e7e7e7;
+
+&-p{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    padding: 15px 0px 15px 15px;
+}
+
+}
+
+.cont2{
+    display: flex;
+    justify-content: space-between;
+
+    &-p{
+        margin-left: 15px;
+        padding-bottom: 15px;
+        font-weight: 300;
+        
+        +p{
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.cont-btn01{
+@include hei-wid (100%,150px);
+@include flex-center;
+
+.btn01{
+    @include hei-wid(50%,50px);
+    background-color:#d96dda;
+    font-size: 1.1em;
+    border-radius: 25PX 25PX;
+    box-shadow: 2px 2px 7px#cacaca;
+    @include flex-center;
+
+    a{
+      color: #fff;
+      
+    }
+}
+}
+
+/*------FOOTER---------*/
+
+
+.footer{
+    @include hei-wid (100%,200PX);
+    background-color: #353535;
+  
+    &-title{
+     
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 15px;
+      font-style: italic;
+     
+      font-family: $font-title;
+   
+  
+      a{
+        color :#FFF;
+      }
+    }
+  
+  
+    li{
+      margin-bottom: 10px;
+      padding-left: 15px;
+      color: #FFF;
+  
+      a{
+        color : #fff
+      }
+    }
+  
+  }
+  
+    .fa-utensils{
+      padding-right: 10px;
+    }
+    .fa-handshake-angle{
+      padding-right: 10px;
+      height: 12px;
+    }
+  }

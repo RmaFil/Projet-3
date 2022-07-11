@@ -1,0 +1,232 @@
+
+  body{
+    font-family: $font;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto !important;
+  
+   
+  }
+  
+  a{
+  text-decoration: none;
+  color: #000
+  }
+
+/*--------MEDIA----------*/ 
+
+
+@media  screen and (min-width :992px ) {
+
+
+    .Dtitle1{
+        @include hei-wid (60%,60PX);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        gap: 30px;
+       
+      
+        
+        
+        .fa-arrow-left{
+          height: 25px;
+          margin-left: 10px;
+        }
+    
+        &-H{
+            @include hei-wid (30%, 30px);
+           
+          }
+
+    +.fran{
+        @include hei-wid(100%, 200px);
+        object-fit: cover;
+
+       
+    }
+    }   
+
+    /*---------SECTION-----------*/
+
+
+    section{
+        @include hei-wid (100%,870px);
+        background-color: #f6f6f6;
+       
+       
+    
+    .section-cont{
+    @include hei-wid (100%,750px);
+    display: flex;
+    flex-wrap: wrap
+    
+    
+    
+   
+    }
+    
+    }
+    .Hcont{
+  
+      @include hei-wid (100%,70px);
+      @include flex-center;
+      gap: 50px;
+      flex-wrap: wrap;
+    align-self: center;
+justify-self: center;
+    
+        &-h1{
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-left: 20px;
+            font-family: $font-title    ;
+        }
+    
+        .fa-heart{
+            height: 35px;
+            margin-right: 10px;
+            
+        }
+    }
+
+    /*---------ARTICLE------------*/
+
+
+    
+    .art{
+        @include hei-wid (33%, 600px);
+        @include flex-center;
+        flex-wrap: wrap;
+ 
+      
+      
+      
+    
+        &-p{
+            font-size: 1.3em;
+            padding: 5px;
+            border-bottom: 4px solid #99e2d0;
+          font-weight: 300;
+          
+            
+        }
+        a{
+            width: 100%;
+         @include flex-center;
+           
+        }
+    }
+    
+    .art-cont{
+    @include hei-wid (90%, 85px);
+    background-color:#FFF;
+ 
+    border-radius: 20px 20px;
+    box-shadow: 5px 5px 3px #e7e7e7;
+    
+    &-p{
+        font-weight: bold;
+        font-size: 1.2em;
+        display: flex;
+        padding: 15px 0px 15px 15px;
+    }
+    
+    }
+    
+    .cont2{
+        display: flex;
+        justify-content: space-between;
+    
+        &-p{
+            margin-left: 15px;
+            font-weight: 300;
+            
+            +p{
+                margin-right: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    
+    .cont-btn01{
+    @include hei-wid (100%,200px);
+    @include flex-center;
+    background-color: $grey;
+    
+    
+    .btn01{
+        @include hei-wid(50%,50px);
+        background-color:#d96dda;
+        font-size: 1.1em;
+        border-radius: 25PX 25PX;
+        box-shadow: 2px 2px 7px#cacaca;
+        @include flex-center;
+    
+        a{
+          color: #fff;
+          
+        }
+    }
+    }
+    
+    /*------FOOTER---------*/
+    
+    
+    .footer{
+      @include hei-wid (100%,150px);
+      background-color: #353535;
+     
+    
+      &-title{
+       display: flex;
+       justify-content: center;
+        font-size: 1.9em;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        padding-left: 15px;
+        font-style: italic;
+       
+        font-family: $font-title;
+     
+    
+        a{
+          color :#FFF;
+          
+        }
+      }
+    
+    
+      li{
+        
+        margin-bottom: 10px;
+        padding-left: 15px;
+        color: #FFF;
+    
+        a{
+          color : #fff;
+          font-size: 1.4em;
+          
+        }
+      }
+    
+    }
+
+    ul{
+        display : flex;
+        justify-content: space-evenly;
+        
+    }
+    
+      .fa-utensils{
+        padding-right: 10px;
+      }
+      .fa-handshake-angle{
+        padding-right: 10px;
+        height: 12px;
+      }
+    
+
+}
