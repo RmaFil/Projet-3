@@ -1,6 +1,7 @@
+
 @import "../SCSS/variables";
 
-@import "desktop2";
+@import "desktop";
 
 
 
@@ -73,13 +74,23 @@ gap: 20px
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    &-border{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     &-p{
         font-size: 1.3em;
         padding: 5px;
-        border-bottom: 4px solid #99e2d0;
       font-weight: 300;
       align-self: flex-start;
         
+    }
+    hr{
+      margin-top: 0px;
+      margin-left: 5px;
+      border: 2px solid #99e2d0;
     }
     a{
         width: 100%;
