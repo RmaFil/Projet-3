@@ -79,11 +79,20 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
+  .art-border {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .art-p {
     font-size: 1.3em;
     padding: 5px;
-    border-bottom: 4px solid #99e2d0;
     font-weight: 300;
+  }
+  .art hr {
+    margin-top: 0px;
+    margin-left: 5px;
+    border: 2px solid #99e2d0;
   }
   .art a {
     width: 100%;
@@ -96,6 +105,7 @@ a {
     width: 90%;
     height: 85px;
     background-color: #FFF;
+    overflow: scroll;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
   }
@@ -252,12 +262,21 @@ a {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  .art-border {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .art-p {
     font-size: 1.3em;
     padding: 5px;
-    border-bottom: 4px solid #99e2d0;
     font-weight: 300;
     align-self: flex-start;
+  }
+  .art hr {
+    margin-top: 0px;
+    margin-left: 5px;
+    border: 2px solid #99e2d0;
   }
   .art a {
     width: 100%;

@@ -24,6 +24,17 @@ border-bottom: 2px solid #cfcfcf;
   @include hei-wid (100%,45px);
   @include flex-center;
   background-color: #eaeaea;
+
+  &-P{
+outline: none;
+background-color: #eaeaea;
+border: none;
+height: 40px;
+width: 100px;
+color: #000;
+
+  }
+
   }
   .fa-location-dot{
     padding-right: 15px;

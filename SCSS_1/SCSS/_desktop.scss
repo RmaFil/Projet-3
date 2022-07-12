@@ -38,6 +38,17 @@ text-decoration: none;
       @include hei-wid (50%,70px);
       @include flex-center;
       background-color: #eaeaea;
+
+      
+  &-P{
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: #000;
+    font-size: large;
+  }
       }
       .fa-location-dot{
         padding-right: 15px;

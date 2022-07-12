@@ -36,6 +36,15 @@ a {
     align-items: center;
     background-color: #eaeaea;
   }
+  .Dlocation-P {
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: #000;
+    font-size: large;
+  }
   .fa-location-dot {
     padding-right: 15px;
   }
@@ -272,6 +281,14 @@ a {
     text-align: center;
     align-items: center;
     background-color: #eaeaea;
+  }
+  .Dlocation-P {
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: #000;
   }
   .fa-location-dot {
     padding-right: 15px;

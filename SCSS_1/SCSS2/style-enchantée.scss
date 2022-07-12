@@ -1,7 +1,6 @@
-
 @import "../SCSS/variables";
 
-@import "desktop";
+@import "desktop-enchantée";
 
 
 
@@ -68,19 +67,33 @@ gap: 20px
     }
 }
 
+
 .art{
     @include hei-wid (90%,320px);
     @include flex-center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    &spe{
+      height: 400px;
+    }
+    &-border{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     &-p{
         font-size: 1.3em;
         padding: 5px;
-        border-bottom: 4px solid #99e2d0;
       font-weight: 300;
       align-self: flex-start;
         
+    }
+    hr{
+      margin-top: 0px;
+      margin-left: 5px;
+      border: 2px solid #99e2d0;
     }
     a{
         width: 100%;
@@ -122,8 +135,9 @@ box-shadow: 5px 5px 3px #e7e7e7;
 
 
 .cont-btn01{
-@include hei-wid (100%,150px);
+@include hei-wid (100%,100px);
 @include flex-center;
+background-color: $grey;
 
 .btn01{
     @include hei-wid(50%,50px);
@@ -146,6 +160,7 @@ box-shadow: 5px 5px 3px #e7e7e7;
 .footer{
     @include hei-wid (100%,200PX);
     background-color: #353535;
+    margin-top: 30px;
   
     &-title{
      

@@ -104,17 +104,24 @@ section .artspe{
         @include flex-center;
         flex-wrap: wrap;
  
-      
+        &-border{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
       
       
     
         &-p{
             font-size: 1.3em;
             padding: 5px;
-            border-bottom: 4px solid #99e2d0;
           font-weight: 300;
           
-            
+        }
+        hr{
+          margin-top: 0px;
+          margin-left: 5px;
+          border: 2px solid #99e2d0;
         }
         a{
             width: 100%;
