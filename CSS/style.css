@@ -45,6 +45,7 @@ a {
     width: 150px;
     color: #000;
     font-size: large;
+    font-weight: 500;
   }
   .fa-location-dot {
     padding-right: 15px;
@@ -158,7 +159,7 @@ a {
     background-color: #f6f6f6;
   }
   .section-Stitle {
-    margin-left: 130PX;
+    margin-left: 70PX;
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 1.7em;
@@ -222,17 +223,10 @@ a {
   }
   .fa-heart {
     position: relative;
-    height: 25px;
+    height: 30px;
     bottom: 18%;
     left: 42%;
     color: #000;
-  }
-  .fa-heart {
-    height: 30px;
-    color: #000;
-  }
-  .fa-heart:hover {
-    color: transparent;
   }
   .heart {
     position: absolute;
@@ -242,14 +236,16 @@ a {
     color: transparent;
   }
   .heart:hover {
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
     -webkit-animation-name: couleur;
             animation-name: couleur;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   @-webkit-keyframes couleur {
     from {
-      color: #FFF;
+      color: transparent;
     }
     to {
       color: #9356dc;
@@ -257,7 +253,7 @@ a {
   }
   @keyframes couleur {
     from {
-      color: #FFF;
+      color: transparent;
     }
     to {
       color: #9356dc;
@@ -332,8 +328,10 @@ a {
     background-color: #eaeaea;
     border: none;
     height: 40px;
-    width: 100px;
+    width: 120px;
     color: #000;
+    font-weight: 500;
+    font-size: 1em;
   }
   .fa-location-dot {
     padding-right: 15px;
@@ -369,7 +367,7 @@ a {
   .nav1-btn01 {
     width: 70%;
     height: 50px;
-    background-color: #d96dda;
+    background: linear-gradient(to right, #d96dda, #a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px #cacaca;
@@ -521,9 +519,6 @@ a {
     height: 30px;
     color: #000;
   }
-  .fa-heart:hover {
-    color: transparent;
-  }
   .heart {
     position: absolute;
     right: 0.001cm;
@@ -531,14 +526,12 @@ a {
     color: transparent;
   }
   .heart:active {
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-name: couleur;
-            animation-name: couleur;
+    -webkit-animation: couleur 0.2s forwards;
+            animation: couleur 0.2s forwards;
   }
   @-webkit-keyframes couleur {
     from {
-      color: #FFF;
+      color: transparent;
     }
     to {
       color: #9356dc;
@@ -546,7 +539,7 @@ a {
   }
   @keyframes couleur {
     from {
-      color: #FFF;
+      color: transparent;
     }
     to {
       color: #9356dc;

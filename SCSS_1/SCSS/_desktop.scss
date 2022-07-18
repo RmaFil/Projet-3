@@ -49,11 +49,14 @@ outline: none;
     width: 150px;
     color: #000;
     font-size: large;
+    font-weight: 500;
   }
       }
       .fa-location-dot{
         padding-right: 15px;
       }
+
+      
     
       /*---------NAV1-----------*/
     
@@ -174,7 +177,7 @@ outline: none;
       
     
     &-Stitle{
-      margin-left: 130PX;
+      margin-left: 70PX;
       padding-top: 40px;
       padding-bottom: 40px;
       font-size: 1.7em;
@@ -242,20 +245,12 @@ outline: none;
     
     .fa-heart{
      position: relative;
-    height: 25px;
+    height: 30px;
      bottom: 18%;
      left: 42%;
-    color : #000
-     
+    color: #000;
     }
-    .fa-heart{
-      height: 30px;
-      color: #000;
-    
-      &:hover{
-        color: transparent;
-      }
-    }
+ 
     
     
     .heart{
@@ -268,15 +263,16 @@ outline: none;
     
     &:hover{
       
-      animation-duration: 3s;
+      animation-duration: 0.5s;
      animation-name: couleur;
+     animation-fill-mode: forwards;
      
     }
     }
     
     @keyframes couleur {
       from{
-        color: #FFF;
+        color:transparent;
       }
       to{
        color: #9356dc

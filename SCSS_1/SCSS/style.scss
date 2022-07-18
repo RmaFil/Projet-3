@@ -30,8 +30,10 @@ outline: none;
 background-color: #eaeaea;
 border: none;
 height: 40px;
-width: 100px;
+width: 120px;
 color: #000;
+font-weight: 500;
+font-size: 1em;
 
   }
 
@@ -69,7 +71,7 @@ color: #000;
 
   &-btn01{
     @include hei-wid(70%,50px);
-    background-color:#d96dda;
+    background:linear-gradient(to right,#d96dda,#a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px#cacaca;
@@ -239,40 +241,40 @@ a{
  bottom: 18%;
  left: 42%;
 
-
 }
+
+
 
 .fa-heart{
   height: 30px;
-  color: #000;
+ color: #000;
 
-  &:hover{
-    color : transparent;
-  }
 }
 
 
 .heart{
   position: absolute;
 right: 0.001cm;
-  height: 30PX; 
-    color: transparent;
-   
+  height: 30PX;
+  color: transparent;
+ 
+  
+ 
 
 &:active{
+  animation: couleur 0.2s  forwards;
   
-  animation-duration: 3s;
- animation-name: couleur;
- 
+
 }
 }
 
 @keyframes couleur {
   from{
-    color: #FFF;
+    color: transparent;
   }
+  
   to{
-   color: #9356dc
+   color: #9356dc ;
   }
 }
 
