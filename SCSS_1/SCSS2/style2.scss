@@ -9,7 +9,7 @@
   
 
 .Dtitle1{
-    @include hei-wid (100%,60PX);
+    @include hei-wid (60%,60PX);
     @include flex-center;
     margin-top: 10px;
  
@@ -22,8 +22,14 @@ left: 30px;
 height: 25px
     }
 
+    a{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
     &-H{
-        @include hei-wid (40%, 30px);
+        @include hei-wid (70%, 35px);
       }
 +.fran{
     @include hei-wid(100%, 260px);
@@ -135,6 +141,12 @@ box-shadow: 5px 5px 3px #e7e7e7;
 @include hei-wid (100%,150px);
 @include flex-center;
 
+a{
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
 .btn01{
     @include hei-wid(50%,50px);
     background-color:#d96dda;
@@ -143,7 +155,7 @@ box-shadow: 5px 5px 3px #e7e7e7;
     box-shadow: 2px 2px 7px#cacaca;
     @include flex-center;
 
-    a{
+    >p{
       color: #fff;
       
     }

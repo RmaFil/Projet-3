@@ -53,6 +53,7 @@ color: #000;
       @include hei-wid(80%,200px);
       @include flex-center;
       flex-wrap: wrap;
+
     }
 
     &-title2{
@@ -102,24 +103,34 @@ flex-wrap: wrap;
 
 .conteneur{
   display: flex;
-  justify-content: flex-start;
+  
   align-items: center;
   @include hei-wid(85%,70PX);
   background-color: $grey;
   border: 1px solid $grey;
   border-radius: 20PX 20PX;
-  box-shadow: 8px 8px 8px #efefef;
+  box-shadow: 5px 5px 5px #efefef;
   gap: 20px;
+
+  &:hover{
+    background-color:#FFF;
+    box-shadow: 10px 10px 12px #efefef9a;
+  }
+
+  
   
   
 &-number{
   @include hei-wid (25px, 25px);
+
+  transform: translate(-40%);
   border: 1px solid #9356dc;
   background-color: #9356dc;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 
   
  
@@ -129,6 +140,10 @@ color: #fff;
 
   }
 
+}
+
+.fa-solid{
+  margin-left: -20px;
 }
   
 a{
@@ -140,7 +155,13 @@ a{
 
 .fa-store{
   color: #9356dc;
+ 
 }
+
+.fa-mobile-screen-button,.fa-store,.fa-ellipsis-vertical{
+  margin-left: -20px
+}
+
 
 /*---------------SECTION-----------*/
 
@@ -162,13 +183,11 @@ a{
   flex-wrap: wrap;
   gap: 25px;
 
-  a{
-    width: 90%
-  }
+
 }
 
 .article{
-  @include hei-wid (100%, 260px);
+  @include hei-wid (90%, 260px);
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 20PX 20PX 20PX 20PX;
@@ -201,7 +220,7 @@ a{
   display: flex;
   padding: 12PX 15PX ;
   
-
+  
   +p{
     color: #000;
     font-size: large;
@@ -210,14 +229,54 @@ a{
   }
 }
 
-.fa-heart{
+.hearth{
+  color: #000;
+}
+
+.fa-a{
  position: relative;
-height: 25px;
+ display: inline-block;
  bottom: 18%;
  left: 42%;
-color : #000
+
+
+}
+
+.fa-heart{
+  height: 30px;
+  color: #000;
+
+  &:hover{
+    color : transparent;
+  }
+}
+
+
+.heart{
+  position: absolute;
+right: 0.001cm;
+  height: 30PX; 
+    color: transparent;
+   
+
+&:active{
+  
+  animation-duration: 3s;
+ animation-name: couleur;
  
 }
+}
+
+@keyframes couleur {
+  from{
+    color: #FFF;
+  }
+  to{
+   color: #9356dc
+  }
+}
+
+
 
 /*------FOOTER---------*/
 
@@ -225,6 +284,7 @@ color : #000
 .footer{
   @include hei-wid (100%,200PX);
   background-color: #353535;
+  margin-top: 50px;
 
   &-title{
    

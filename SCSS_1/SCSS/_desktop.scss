@@ -9,6 +9,7 @@ body{
 
 a{
 text-decoration: none;
+outline: none;
 }
 
 
@@ -100,11 +101,12 @@ text-decoration: none;
     
     .nav-2{
     @include hei-wid(50%, 410px);
-    
     box-shadow:0px 3px 1px #cacaca;
+
+
     &-title3{
-      padding-left: 20PX;
-      margin-top: 40px;
+      padding-left: 60PX;
+      margin-top: 40px; 
       font-size: 1.4em;
       
       }
@@ -129,6 +131,10 @@ text-decoration: none;
       box-shadow: 8px 8px 8px #efefef;
       gap: 20px;
       
+        &:hover{
+    background-color:#FFF;
+    box-shadow: 10px 10px 12px #efefef9a;
+  }
       
     &-number{
       @include hei-wid (25px, 25px);
@@ -181,13 +187,11 @@ text-decoration: none;
       flex-wrap: wrap;
       gap: 25px;
     
-      a{
-        width: 40%
-      }
+     
     }
     
     .article{
-      @include hei-wid (100%, 260px);
+      @include hei-wid (45%, 260px);
       background-color: #fff;
       border: 1px solid #fff;
       border-radius: 20PX 20PX 20PX 20PX;
@@ -228,6 +232,13 @@ text-decoration: none;
         padding-left: 15px;
       }
     }
+
+    .fa-a{
+      position: relative;
+      display: inline-block;
+      bottom: 18%;
+      left: 42%;
+    }
     
     .fa-heart{
      position: relative;
@@ -237,6 +248,42 @@ text-decoration: none;
     color : #000
      
     }
+    .fa-heart{
+      height: 30px;
+      color: #000;
+    
+      &:hover{
+        color: transparent;
+      }
+    }
+    
+    
+    .heart{
+      position: absolute;
+      right: 1cm;
+     top: 0.001cm;
+      height: 30PX; 
+        color: transparent;
+       
+    
+    &:hover{
+      
+      animation-duration: 3s;
+     animation-name: couleur;
+     
+    }
+    }
+    
+    @keyframes couleur {
+      from{
+        color: #FFF;
+      }
+      to{
+       color: #9356dc
+      }
+    }
+
+    /*-----FOOTER---------*/
     
     .footer{
       @include hei-wid (100%,150PX);

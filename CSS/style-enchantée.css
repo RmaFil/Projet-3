@@ -13,13 +13,16 @@ a {
 /*--------MEDIA----------*/
 @media screen and (min-width: 992px) {
   .Dtitle1 {
-    width: 60%;
+    width: 57%;
     height: 60PX;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
     gap: 30px;
+  }
+  .Dtitle1 a {
+    width: 30%;
   }
   .Dtitle1 .fa-arrow-left {
     height: 25px;
@@ -138,8 +141,13 @@ a {
     align-items: center;
     background-color: #f6f6f6;
   }
+  .cont-btn01 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .cont-btn01 .btn01 {
-    width: 50%;
+    width: 30%;
     height: 50px;
     background-color: #d96dda;
     font-size: 1.1em;
@@ -150,7 +158,7 @@ a {
     text-align: center;
     align-items: center;
   }
-  .cont-btn01 .btn01 a {
+  .cont-btn01 .btn01 > p {
     color: #fff;
   }
   /*------FOOTER---------*/
@@ -195,7 +203,7 @@ a {
 }
 @media screen and (max-width: 991px) {
   .Dtitle1 {
-    width: 100%;
+    width: 60%;
     height: 60PX;
     display: flex;
     justify-content: center;
@@ -208,9 +216,14 @@ a {
     left: 30px;
     height: 25px;
   }
+  .Dtitle1 a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   .Dtitle1-H {
-    width: 40%;
-    height: 30px;
+    width: 70%;
+    height: 35px;
   }
   .Dtitle1 + .fran {
     width: 100%;
@@ -322,6 +335,11 @@ a {
     align-items: center;
     background-color: #f6f6f6;
   }
+  .cont-btn01 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .cont-btn01 .btn01 {
     width: 50%;
     height: 50px;
@@ -334,7 +352,7 @@ a {
     text-align: center;
     align-items: center;
   }
-  .cont-btn01 .btn01 a {
+  .cont-btn01 .btn01 > p {
     color: #fff;
   }
   /*------FOOTER---------*/

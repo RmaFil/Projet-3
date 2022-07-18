@@ -21,7 +21,7 @@
 
 
     .Dtitle1{
-        @include hei-wid (60%,60PX);
+        @include hei-wid (57%,60PX);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,7 +29,9 @@
         gap: 30px;
        
       
-        
+        a{
+          width: 30%;
+        }
         
         .fa-arrow-left{
           height: 25px;
@@ -166,17 +168,24 @@ section .artspe{
     @include hei-wid (100%,100px);
     @include flex-center;
     background-color: $grey;
+
+    a{
+      width: 100%;
+  display: flex;
+  justify-content: center
+    }
+    
     
     
     .btn01{
-        @include hei-wid(50%,50px);
+        @include hei-wid(30%,50px);
         background-color:#d96dda;
         font-size: 1.1em;
         border-radius: 25PX 25PX;
         box-shadow: 2px 2px 7px#cacaca;
         @include flex-center;
     
-        a{
+        >p{
           color: #fff;
           
         }
