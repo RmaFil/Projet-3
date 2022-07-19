@@ -82,7 +82,7 @@ a {
   .nav1-btn01 {
     width: 65%;
     height: 50px;
-    background-color: #d96dda;
+    background: linear-gradient(to right, #d96dda, #a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px #cacaca;
@@ -505,9 +505,6 @@ a {
     font-size: large;
     display: flex;
     padding-left: 15px;
-  }
-  .hearth {
-    color: #000;
   }
   .fa-a {
     position: relative;

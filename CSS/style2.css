@@ -105,10 +105,41 @@ a {
     text-align: center;
     align-items: center;
   }
+  @-webkit-keyframes apparition {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes apparition {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0px);
+      opacity: 1;
+    }
+  }
   .art-cont {
     width: 90%;
     height: 85px;
     background-color: #FFF;
+    -webkit-animation: apparition 1s ease-in-out forwards;
+            animation: apparition 1s ease-in-out forwards;
+    opacity: 0;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
   }
@@ -130,6 +161,14 @@ a {
     margin-right: 20px;
     font-weight: bold;
   }
+  .art2 {
+    -webkit-animation: apparition 1s ease-in-out 0.2s forwards;
+            animation: apparition 1s ease-in-out 0.2s forwards;
+  }
+  .art3 {
+    -webkit-animation: apparition 1s ease-in-out 0.5s forwards;
+            animation: apparition 1s ease-in-out 0.5s forwards;
+  }
   .cont-btn01 {
     width: 100%;
     height: 200px;
@@ -147,7 +186,7 @@ a {
   .cont-btn01 .btn01 {
     width: 30%;
     height: 50px;
-    background-color: #d96dda;
+    background: linear-gradient(to right, #d96dda, #a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px #cacaca;
@@ -295,12 +334,142 @@ a {
     width: 100%;
     display: block;
   }
+  @-webkit-keyframes apparition {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes apparition {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0px);
+      opacity: 1;
+    }
+  }
+  /*---------ANIMATION CLOCHE---------*/
+  @-webkit-keyframes anim-btn {
+    from {
+      background-color: transparent;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+    }
+    to {
+      background-color: #99e2d0;
+      transform: scaleX(1);
+    }
+  }
+  @keyframes anim-btn {
+    from {
+      background-color: transparent;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+    }
+    to {
+      background-color: #99e2d0;
+      transform: scaleX(1);
+    }
+  }
+  @-webkit-keyframes rond {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: #FFF;
+    }
+  }
+  @keyframes rond {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: #FFF;
+    }
+  }
+  @-webkit-keyframes logo {
+    from {
+      color: transparent;
+      transform: rotate(180deg);
+    }
+    50% {
+      color: transparent;
+      transform: rotate(100deg);
+    }
+    to {
+      color: #99e2d0;
+    }
+  }
+  @keyframes logo {
+    from {
+      color: transparent;
+      transform: rotate(180deg);
+    }
+    50% {
+      color: transparent;
+      transform: rotate(100deg);
+    }
+    to {
+      color: #99e2d0;
+    }
+  }
+  @-webkit-keyframes para {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-60px);
+    }
+  }
+  @keyframes para {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-60px);
+    }
+  }
+  /*--------FIN ANIMATION-------*/
   .art-cont {
     width: 100%;
     height: 75px;
     background-color: #FFF;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
+    -webkit-animation: apparition 1s ease-in-out forwards;
+            animation: apparition 1s ease-in-out forwards;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .art-cont:active > .cont2 > .cont2-p + p {
+    -webkit-animation: para 700ms ease forwards;
+            animation: para 700ms ease forwards;
+  }
+  .art-cont:active > .animation {
+    -webkit-animation: anim-btn 700ms ease forwards;
+            animation: anim-btn 700ms ease forwards;
+  }
+  .art-cont:active > .animation > .animation-rond {
+    -webkit-animation: rond 700ms linear forwards;
+            animation: rond 700ms linear forwards;
+  }
+  .art-cont:active > .animation > .animation-rond > .fa-check {
+    -webkit-animation: logo 700ms linear forwards;
+            animation: logo 700ms linear forwards;
   }
   .art-cont-p {
     font-weight: bold;
@@ -316,11 +485,51 @@ a {
     margin-left: 15px;
     padding-bottom: 15px;
     font-weight: 300;
+    overflow: hidden;
   }
   .cont2-p + p {
     margin-right: 20px;
     font-weight: bold;
   }
+  .art2 {
+    -webkit-animation: apparition 1s ease-in-out 0.2s forwards;
+            animation: apparition 1s ease-in-out 0.2s forwards;
+  }
+  .art3 {
+    -webkit-animation: apparition 1s ease-in-out 0.5s forwards;
+            animation: apparition 1s ease-in-out 0.5s forwards;
+  }
+  .animation {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    background-color: transparent;
+  }
+  .animation-rond {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    margin-left: 20px;
+  }
+  .animation-rond .fa-check {
+    color: transparent;
+    height: 20px;
+  }
+  /*-------BTN-------------*/
   .cont-btn01 {
     width: 100%;
     height: 150px;
@@ -337,7 +546,7 @@ a {
   .cont-btn01 .btn01 {
     width: 50%;
     height: 50px;
-    background-color: #d96dda;
+    background: linear-gradient(to right, #d96dda, #a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px #cacaca;

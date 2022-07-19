@@ -131,10 +131,25 @@ justify-self: center;
            
         }
     }
+
+    @keyframes apparition {
+      from{transform:translateY(50px); opacity: 0;
+       }
+    50%{
+      transform:translateY(25px); opacity: 0;
+    }
+    
+      to{transform: translate(0px);opacity: 1;
+    
+      }
+    }
+    
     
     .art-cont{
     @include hei-wid (90%, 85px);
     background-color:#FFF;
+    animation: apparition 1s ease-in-out forwards ;
+opacity: 0;
    
     
  
@@ -164,6 +179,14 @@ justify-self: center;
             }
         }
     }
+
+    .art2{
+      animation: apparition 1s ease-in-out 0.2s forwards   ;
+    }
+    
+    .art3{
+      animation: apparition 1s ease-in-out 0.5s  forwards ;
+    }
     
     
     .cont-btn01{
@@ -180,7 +203,7 @@ justify-self: center;
     
     .btn01{
         @include hei-wid(30%,50px);
-        background-color:#d96dda;
+        background:linear-gradient(to right,#d96dda,#a05bdc);
         font-size: 1.1em;
         border-radius: 25PX 25PX;
         box-shadow: 2px 2px 7px#cacaca;

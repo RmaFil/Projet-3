@@ -79,6 +79,7 @@ gap: 20px
     @include flex-center;
     flex-wrap: wrap;
     justify-content: flex-start;
+   
 
     &-border{
       display: flex;
@@ -105,11 +106,89 @@ gap: 20px
     }
 }
 
+@keyframes apparition {
+  from{transform:translateY(50px); opacity: 0;
+   }
+50%{
+  transform:translateY(25px); opacity: 0;
+}
+
+  to{transform: translate(0px);opacity: 1;
+
+  }
+}
+
+/*---------ANIMATION CLOCHE---------*/
+
+@keyframes anim-btn {
+  from{
+     background-color: transparent; transform: scaleX(0); transform-origin: 100% 50% ;
+  }
+
+
+
+  to{
+    background-color: #99e2d0;transform: scaleX(1);
+  }
+}
+
+
+@keyframes rond {
+  from{
+    background-color: transparent;
+  }
+  to{
+    background-color: #FFF
+  }
+}
+
+@keyframes logo {
+  from{
+    color: transparent;transform: rotate(180deg);
+  }
+
+  50%{
+    color: transparent;transform: rotate(100deg);
+  }
+
+  to{
+    color: #99e2d0;
+  }
+}
+
+@keyframes para {
+  from{transform: translateX(0);}
+  to{transform: translateX(-60px)}
+}
+
+/*--------FIN ANIMATION-------*/
+
 .art-cont{
 @include hei-wid (100%, 75px);
 background-color:#FFF;
 border-radius: 20px 20px;
 box-shadow: 5px 5px 3px #e7e7e7;
+animation: apparition 1s ease-in-out forwards ;
+opacity: 0;
+overflow: hidden;
+
+&:active>.cont2>.cont2-p +p{
+  animation: para 700ms ease forwards;
+}
+
+&:active >.animation{
+  animation: anim-btn 700ms ease forwards;
+ 
+  &>.animation-rond{
+    animation: rond 700ms linear forwards;
+
+    &>.fa-check{
+      animation: logo 700ms linear forwards;
+    }
+  }
+}
+
+
 
 &-p{
     font-weight: bold;
@@ -123,11 +202,14 @@ box-shadow: 5px 5px 3px #e7e7e7;
 .cont2{
     display: flex;
     justify-content: space-between;
+    
 
     &-p{
         margin-left: 15px;
         padding-bottom: 15px;
         font-weight: 300;
+        overflow: hidden;
+       
         
         +p{
             margin-right: 20px;
@@ -136,6 +218,54 @@ box-shadow: 5px 5px 3px #e7e7e7;
     }
 }
 
+.art2{
+  animation: apparition 1s ease-in-out 0.2s forwards   ;
+}
+
+.art3{
+  animation: apparition 1s ease-in-out 0.5s  forwards ;
+}
+
+
+
+.animation{
+  @include hei-wid(100px,100%);
+  @include flex-center;
+  justify-content: flex-start;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  top: 0px;
+  right: -30px;
+ background-color: transparent;
+
+
+
+
+ &-rond{
+  @include flex-center;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  margin-left: 20px;
+
+
+  .fa-check{
+    color: transparent;
+height: 20px;
+ 
+  }
+ }
+}
+
+
+
+
+
+
+
+/*-------BTN-------------*/
 
 .cont-btn01{
 @include hei-wid (100%,150px);
@@ -149,7 +279,7 @@ a{
 
 .btn01{
     @include hei-wid(50%,50px);
-    background-color:#d96dda;
+    background:linear-gradient(to right,#d96dda,#a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px#cacaca;
@@ -161,6 +291,8 @@ a{
     }
 }
 }
+
+
 
 /*------FOOTER---------*/
 

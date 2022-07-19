@@ -87,7 +87,7 @@ outline: none;
     
       &-btn01{
         @include hei-wid(65%,50px);
-        background-color:#d96dda;
+        background:linear-gradient(to right,#d96dda,#a05bdc);
         font-size: 1.1em;
         border-radius: 25PX 25PX;
         box-shadow: 2px 2px 7px#cacaca;
