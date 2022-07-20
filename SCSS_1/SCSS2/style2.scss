@@ -118,48 +118,6 @@ gap: 20px
   }
 }
 
-/*---------ANIMATION CLOCHE---------*/
-
-@keyframes anim-btn {
-  from{
-     background-color: transparent; transform: scaleX(0); transform-origin: 100% 50% ;
-  }
-
-
-
-  to{
-    background-color: #99e2d0;transform: scaleX(1);
-  }
-}
-
-
-@keyframes rond {
-  from{
-    background-color: transparent;
-  }
-  to{
-    background-color: #FFF
-  }
-}
-
-@keyframes logo {
-  from{
-    color: transparent;transform: rotate(180deg);
-  }
-
-  50%{
-    color: transparent;transform: rotate(100deg);
-  }
-
-  to{
-    color: #99e2d0;
-  }
-}
-
-@keyframes para {
-  from{transform: translateX(0);}
-  to{transform: translateX(-60px)}
-}
 
 /*--------FIN ANIMATION-------*/
 
@@ -173,17 +131,18 @@ opacity: 0;
 overflow: hidden;
 
 &:active>.cont2>.cont2-p +p{
-  animation: para 700ms ease forwards;
+ margin-right: 80px;
 }
 
 &:active >.animation{
-  animation: anim-btn 700ms ease forwards;
+ background-color: #99e2d0;
+ transform: scaleX(1);
  
   &>.animation-rond{
-    animation: rond 700ms linear forwards;
+    background-color: #FFF;
 
     &>.fa-check{
-      animation: logo 700ms linear forwards;
+      color: #99e2d0;transform: rotate(0deg);
     }
   }
 }
@@ -208,12 +167,18 @@ overflow: hidden;
         margin-left: 15px;
         padding-bottom: 15px;
         font-weight: 300;
-        overflow: hidden;
+       white-space: nowrap;
+       overflow: hidden;
+        text-overflow: ellipsis;
+       
+       
        
         
         +p{
             margin-right: 20px;
             font-weight: bold;
+            transition: all 500ms ease-in-out;
+          
         }
     }
 }
@@ -229,17 +194,17 @@ overflow: hidden;
 
 
 .animation{
-  @include hei-wid(100px,100%);
+  @include hei-wid(130px,100%);
   @include flex-center;
   justify-content: flex-start;
   background-color: #99e2d0;
   border-radius: 0px 20px 20px 0px;
   position: absolute;
   top: 0px;
-  right: -30px;
+  right: -60px;
  background-color: transparent;
-
-
+ transform: scaleX(0);
+ transition: all 500ms ease-in-out;
 
 
  &-rond{
@@ -249,20 +214,18 @@ overflow: hidden;
   width: 30px;
   background-color: transparent;
   margin-left: 20px;
+  transition: all 500MS ease-in-out;
 
 
   .fa-check{
     color: transparent;
 height: 20px;
+transform: rotate(100deg);
+transition: all 500ms ease-in-out;
  
   }
  }
 }
-
-
-
-
-
 
 
 /*-------BTN-------------*/

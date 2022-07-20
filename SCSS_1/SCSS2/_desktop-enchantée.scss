@@ -149,8 +149,26 @@ section .artspe{
     background-color:#FFF;
     animation: apparition 1s ease-in-out forwards ;
     opacity: 0;
+    overflow: hidden;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
+
+    &:active>.cont2>.cont2-p +p{
+      margin-right: 80px;
+     }
+     
+     &:active >.animation{
+      background-color: #99e2d0;
+      transform: scaleX(1);
+      
+       &>.animation-rond{
+         background-color: #FFF;
+     
+         &>.fa-check{
+           color: #99e2d0;transform: rotate(0deg);
+         }
+       }
+     }
     
     &-p{
         font-weight: bold;
@@ -180,15 +198,59 @@ section .artspe{
         &-p{
             margin-left: 15px;
             font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+             text-overflow: ellipsis;
             
             +p{
                 margin-right: 20px;
                 font-weight: bold;
+                transition: all 500ms ease-in-out;
             }
         }
     }
+
+
+    .animation{
+      @include hei-wid(130px,100%);
+      @include flex-center;
+      justify-content: flex-start;
+      background-color: #99e2d0;
+      border-radius: 0px 20px 20px 0px;
+      position: absolute;
+      top: 0px;
+      right: -60px;
+     background-color: transparent;
+     transform: scaleX(0);
+     transition: all 500ms ease-in-out;
     
     
+    
+    
+    
+     &-rond{
+      @include flex-center;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+      margin-left: 20px;
+      transition: all 500MS ease-in-out;
+    
+    
+      .fa-check{
+        color: transparent;
+    height: 20px;
+    transform: rotate(100deg);
+    transition: all 500ms ease-in-out;
+     
+      }
+     }
+    }
+    
+    /*------------BTN-----------*/
+
+
     .cont-btn01{
     @include hei-wid (100%,100px);
     @include flex-center;

@@ -142,6 +142,21 @@ a {
     opacity: 0;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
+    overflow: hidden;
+  }
+  .art-cont:active > .cont2 > .cont2-p + p {
+    margin-right: 80px;
+  }
+  .art-cont:active > .animation {
+    background-color: #99e2d0;
+    transform: scaleX(1);
+  }
+  .art-cont:active > .animation > .animation-rond {
+    background-color: #FFF;
+  }
+  .art-cont:active > .animation > .animation-rond > .fa-check {
+    color: #99e2d0;
+    transform: rotate(0deg);
   }
   .art-cont-p {
     font-weight: bold;
@@ -156,10 +171,14 @@ a {
   .cont2-p {
     margin-left: 15px;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .cont2-p + p {
     margin-right: 20px;
     font-weight: bold;
+    transition: all 500ms ease-in-out;
   }
   .art2 {
     -webkit-animation: apparition 1s ease-in-out 0.2s forwards;
@@ -169,6 +188,42 @@ a {
     -webkit-animation: apparition 1s ease-in-out 0.5s forwards;
             animation: apparition 1s ease-in-out 0.5s forwards;
   }
+  .animation {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: all 500ms ease-in-out;
+  }
+  .animation-rond {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    margin-left: 20px;
+    transition: all 500MS ease-in-out;
+  }
+  .animation-rond .fa-check {
+    color: transparent;
+    height: 20px;
+    transform: rotate(100deg);
+    transition: all 500ms ease-in-out;
+  }
+  /*---------BTN----------*/
   .cont-btn01 {
     width: 100%;
     height: 200px;
@@ -362,87 +417,6 @@ a {
       opacity: 1;
     }
   }
-  /*---------ANIMATION CLOCHE---------*/
-  @-webkit-keyframes anim-btn {
-    from {
-      background-color: transparent;
-      transform: scaleX(0);
-      transform-origin: 100% 50%;
-    }
-    to {
-      background-color: #99e2d0;
-      transform: scaleX(1);
-    }
-  }
-  @keyframes anim-btn {
-    from {
-      background-color: transparent;
-      transform: scaleX(0);
-      transform-origin: 100% 50%;
-    }
-    to {
-      background-color: #99e2d0;
-      transform: scaleX(1);
-    }
-  }
-  @-webkit-keyframes rond {
-    from {
-      background-color: transparent;
-    }
-    to {
-      background-color: #FFF;
-    }
-  }
-  @keyframes rond {
-    from {
-      background-color: transparent;
-    }
-    to {
-      background-color: #FFF;
-    }
-  }
-  @-webkit-keyframes logo {
-    from {
-      color: transparent;
-      transform: rotate(180deg);
-    }
-    50% {
-      color: transparent;
-      transform: rotate(100deg);
-    }
-    to {
-      color: #99e2d0;
-    }
-  }
-  @keyframes logo {
-    from {
-      color: transparent;
-      transform: rotate(180deg);
-    }
-    50% {
-      color: transparent;
-      transform: rotate(100deg);
-    }
-    to {
-      color: #99e2d0;
-    }
-  }
-  @-webkit-keyframes para {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-60px);
-    }
-  }
-  @keyframes para {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-60px);
-    }
-  }
   /*--------FIN ANIMATION-------*/
   .art-cont {
     width: 100%;
@@ -456,20 +430,18 @@ a {
     overflow: hidden;
   }
   .art-cont:active > .cont2 > .cont2-p + p {
-    -webkit-animation: para 700ms ease forwards;
-            animation: para 700ms ease forwards;
+    margin-right: 80px;
   }
   .art-cont:active > .animation {
-    -webkit-animation: anim-btn 700ms ease forwards;
-            animation: anim-btn 700ms ease forwards;
+    background-color: #99e2d0;
+    transform: scaleX(1);
   }
   .art-cont:active > .animation > .animation-rond {
-    -webkit-animation: rond 700ms linear forwards;
-            animation: rond 700ms linear forwards;
+    background-color: #FFF;
   }
   .art-cont:active > .animation > .animation-rond > .fa-check {
-    -webkit-animation: logo 700ms linear forwards;
-            animation: logo 700ms linear forwards;
+    color: #99e2d0;
+    transform: rotate(0deg);
   }
   .art-cont-p {
     font-weight: bold;
@@ -485,11 +457,14 @@ a {
     margin-left: 15px;
     padding-bottom: 15px;
     font-weight: 300;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
   .cont2-p + p {
     margin-right: 20px;
     font-weight: bold;
+    transition: all 500ms ease-in-out;
   }
   .art2 {
     -webkit-animation: apparition 1s ease-in-out 0.2s forwards;
@@ -500,7 +475,7 @@ a {
             animation: apparition 1s ease-in-out 0.5s forwards;
   }
   .animation {
-    width: 100px;
+    width: 130px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -511,8 +486,10 @@ a {
     border-radius: 0px 20px 20px 0px;
     position: absolute;
     top: 0px;
-    right: -30px;
+    right: -60px;
     background-color: transparent;
+    transform: scaleX(0);
+    transition: all 500ms ease-in-out;
   }
   .animation-rond {
     display: flex;
@@ -524,10 +501,13 @@ a {
     width: 30px;
     background-color: transparent;
     margin-left: 20px;
+    transition: all 500MS ease-in-out;
   }
   .animation-rond .fa-check {
     color: transparent;
     height: 20px;
+    transform: rotate(100deg);
+    transition: all 500ms ease-in-out;
   }
   /*-------BTN-------------*/
   .cont-btn01 {

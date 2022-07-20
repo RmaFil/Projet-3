@@ -243,38 +243,38 @@ a{
 
 
 
-.fa-heart{
-  height: 30px;
- color: #000;
 
+.heart-fa{
+  position: absolute;
+  right: 0.001cm;
+    height: 30px;
+ color: #000;
+ transition: all 900ms ease-in;
+
+
+ &:active{
+ color: transparent;
 }
 
+&:active ~.heart{
+  color: transparent;
+ background-image: linear-gradient(#99D, #F34);
+ background-clip: text;
+ -webkit-background-clip: text;
+  transform: scale(1);
+}
+}
 
 .heart{
-  position: absolute;
-right: 0.001cm;
   height: 30PX;
-  color: transparent;
- 
-  
- 
 
-&:active{
-  animation: couleur 0.2s  forwards;
-  
+ transform: scale(0);
+ transition: background-image, background-clip,transform, 1s ease-in-out;
+
 
 }
-}
 
-@keyframes couleur {
-  from{
-    color: transparent;
-  }
-  
-  to{
-   color: #9356dc
-  }
-}
+
 
 
 
