@@ -1,3 +1,52 @@
+.loading {
+  width: 100%;
+  height: 2340px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-items: flex-start;
+  background: linear-gradient(to top, #FFF 70%, rgb(241, 90, 90));
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.loading-cont {
+  width: 100%;
+  height: 100%;
+  margin-top: 550px;
+  -webkit-animation: loading 5s ease-in-out infinite;
+          animation: loading 5s ease-in-out infinite;
+}
+.loading-cont-p {
+  color: transparent;
+  font-size: 5em;
+  font-family: "Shrikhand", Arial, georgia, serif;
+  background-image: linear-gradient(to top, #FFF 80%, rgb(90, 87, 87));
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.loading img {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes loading {
+  20% {
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes loading {
+  20% {
+    transform: translateY(-500px);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;

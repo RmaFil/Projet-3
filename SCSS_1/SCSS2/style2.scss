@@ -161,15 +161,14 @@ overflow: hidden;
 .cont2{
     display: flex;
     justify-content: space-between;
-    
-
+    white-space: nowrap;
+    overflow: hidden;
+     text-overflow: ellipsis;
     &-p{
         margin-left: 15px;
         padding-bottom: 15px;
         font-weight: 300;
-       white-space: nowrap;
-       overflow: hidden;
-        text-overflow: ellipsis;
+    
        
        
        
