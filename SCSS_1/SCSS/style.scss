@@ -250,7 +250,7 @@ a{
   right: 0.001cm;
     height: 30px;
  color: #000;
- transition: all 900ms ease-in;
+ transition: all 600ms ease-in;
 
 
  &:active{
@@ -258,8 +258,8 @@ a{
 }
 
 &:active ~.heart{
-  color: transparent;
- background-image: linear-gradient(#99D, #F34);
+  color: #9356dc;
+ background:#9356dc;
  background-clip: text;
  -webkit-background-clip: text;
   transform: scale(1);
@@ -267,10 +267,10 @@ a{
 }
 
 .heart{
+  color: #9356dc;
   height: 30PX;
-
  transform: scale(0);
- transition: background-image, background-clip,transform, 1s ease-in-out;
+ transition: transform 700s ease-in-out,background-clip 1MS;
 
 
 }
