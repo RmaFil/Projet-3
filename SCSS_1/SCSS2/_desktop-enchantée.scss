@@ -21,7 +21,7 @@
 
 
     .Dtitle1{
-        @include hei-wid (60%,60PX);
+        @include hei-wid (57%,60PX);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,7 +29,9 @@
         gap: 30px;
        
       
-        
+        a{
+          width: 30%;
+        }
         
         .fa-arrow-left{
           height: 25px;
@@ -129,13 +131,44 @@ section .artspe{
            
         }
     }
+    @keyframes apparition {
+      from{transform:translateY(50px); opacity: 0;
+       }
+    50%{
+      transform:translateY(25px); opacity: 0;
+    }
+    
+      to{transform: translate(0px);opacity: 1;
+    
+      }
+    }
+    
     
     .art-cont{
     @include hei-wid (90%, 85px);
     background-color:#FFF;
- 
+    animation: apparition 1s ease-in-out forwards ;
+    opacity: 0;
+    overflow: hidden;
     border-radius: 20px 20px;
     box-shadow: 5px 5px 3px #e7e7e7;
+
+    &:active>.cont2>.cont2-p +p{
+      margin-right: 80px;
+     }
+     
+     &:active >.animation{
+      background-color: #99e2d0;
+      transform: scaleX(1);
+      
+       &>.animation-rond{
+         background-color: #FFF;
+     
+         &>.fa-check{
+           color: #99e2d0;transform: rotate(0deg);
+         }
+       }
+     }
     
     &-p{
         font-weight: bold;
@@ -145,6 +178,18 @@ section .artspe{
     }
     
     }
+
+    .art2{
+      animation: apparition 1s ease-in-out 0.2s forwards   ;
+    }
+    
+    .art3{
+      animation: apparition 1s ease-in-out 0.5s  forwards ;
+    }
+    
+    .art4{
+      animation: apparition 1s ease-in-out 0.8s  forwards ;
+    }
     
     .cont2{
         display: flex;
@@ -153,30 +198,81 @@ section .artspe{
         &-p{
             margin-left: 15px;
             font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+             text-overflow: ellipsis;
             
             +p{
                 margin-right: 20px;
                 font-weight: bold;
+                transition: all 500ms ease-in-out;
             }
         }
     }
+
+
+    .animation{
+      @include hei-wid(130px,100%);
+      @include flex-center;
+      justify-content: flex-start;
+      background-color: #99e2d0;
+      border-radius: 0px 20px 20px 0px;
+      position: absolute;
+      top: 0px;
+      right: -60px;
+     background-color: transparent;
+     transform: scaleX(0);
+     transition: all 500ms ease-in-out;
     
     
+    
+    
+    
+     &-rond{
+      @include flex-center;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+      margin-left: 20px;
+      transition: all 500MS ease-in-out;
+    
+    
+      .fa-check{
+        color: transparent;
+    height: 20px;
+    transform: rotate(100deg);
+    transition: all 500ms ease-in-out;
+     
+      }
+     }
+    }
+    
+    /*------------BTN-----------*/
+
+
     .cont-btn01{
     @include hei-wid (100%,100px);
     @include flex-center;
     background-color: $grey;
+
+    a{
+      width: 100%;
+  display: flex;
+  justify-content: center
+    }
+    
     
     
     .btn01{
-        @include hei-wid(50%,50px);
-        background-color:#d96dda;
+        @include hei-wid(30%,50px);
+        background:linear-gradient(to right,#d96dda,#a05bdc);
         font-size: 1.1em;
         border-radius: 25PX 25PX;
         box-shadow: 2px 2px 7px#cacaca;
         @include flex-center;
     
-        a{
+        >p{
           color: #fff;
           
         }

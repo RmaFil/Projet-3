@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "loading-page";
 @import "desktop";
 
 
@@ -30,8 +31,10 @@ outline: none;
 background-color: #eaeaea;
 border: none;
 height: 40px;
-width: 100px;
+width: 120px;
 color: #000;
+font-weight: 500;
+font-size: 1em;
 
   }
 
@@ -53,6 +56,7 @@ color: #000;
       @include hei-wid(80%,200px);
       @include flex-center;
       flex-wrap: wrap;
+
     }
 
     &-title2{
@@ -68,7 +72,7 @@ color: #000;
 
   &-btn01{
     @include hei-wid(70%,50px);
-    background-color:#d96dda;
+    background:linear-gradient(to right,#d96dda,#a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px#cacaca;
@@ -102,24 +106,34 @@ flex-wrap: wrap;
 
 .conteneur{
   display: flex;
-  justify-content: flex-start;
+  
   align-items: center;
   @include hei-wid(85%,70PX);
   background-color: $grey;
   border: 1px solid $grey;
   border-radius: 20PX 20PX;
-  box-shadow: 8px 8px 8px #efefef;
+  box-shadow: 5px 5px 5px #efefef;
   gap: 20px;
+
+  &:hover{
+    background-color:#FFF;
+    box-shadow: 10px 10px 12px #efefef9a;
+  }
+
+  
   
   
 &-number{
   @include hei-wid (25px, 25px);
+
+  transform: translate(-40%);
   border: 1px solid #9356dc;
   background-color: #9356dc;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 
   
  
@@ -129,6 +143,10 @@ color: #fff;
 
   }
 
+}
+
+.fa-solid{
+  margin-left: -20px;
 }
   
 a{
@@ -140,7 +158,13 @@ a{
 
 .fa-store{
   color: #9356dc;
+ 
 }
+
+.fa-mobile-screen-button,.fa-store,.fa-ellipsis-vertical{
+  margin-left: -20px
+}
+
 
 /*---------------SECTION-----------*/
 
@@ -162,13 +186,11 @@ a{
   flex-wrap: wrap;
   gap: 25px;
 
-  a{
-    width: 90%
-  }
+
 }
 
 .article{
-  @include hei-wid (100%, 260px);
+  @include hei-wid (90%, 260px);
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 20PX 20PX 20PX 20PX;
@@ -201,7 +223,7 @@ a{
   display: flex;
   padding: 12PX 15PX ;
   
-
+  
   +p{
     color: #000;
     font-size: large;
@@ -210,14 +232,52 @@ a{
   }
 }
 
-.fa-heart{
+
+
+.fa-a{
  position: relative;
-height: 25px;
+ display: inline-block;
  bottom: 18%;
  left: 42%;
-color : #000
- 
+
 }
+
+
+
+
+.heart-fa{
+  position: absolute;
+  right: 0.001cm;
+    height: 30px;
+ color: #000;
+ transition: all 600ms ease-in;
+
+
+ &:active{
+ color: transparent;
+}
+
+&:active ~.heart{
+  color: #9356dc;
+ background:#9356dc;
+ background-clip: text;
+ -webkit-background-clip: text;
+  transform: scale(1);
+}
+}
+
+.heart{
+  color: #9356dc;
+  height: 30PX;
+ transform: scale(0);
+ transition: transform 700s ease-in-out,background-clip 1MS;
+
+
+}
+
+
+
+
 
 /*------FOOTER---------*/
 
@@ -225,6 +285,7 @@ color : #000
 .footer{
   @include hei-wid (100%,200PX);
   background-color: #353535;
+  margin-top: 50px;
 
   &-title{
    

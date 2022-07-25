@@ -3,12 +3,13 @@ body{
   box-sizing: border-box;
   max-width: 1400px;
   margin: 0 auto !important;
- 
- 
 }
+
+
 
 a{
 text-decoration: none;
+outline: none;
 }
 
 
@@ -48,11 +49,14 @@ text-decoration: none;
     width: 150px;
     color: #000;
     font-size: large;
+    font-weight: 500;
   }
       }
       .fa-location-dot{
         padding-right: 15px;
       }
+
+      
     
       /*---------NAV1-----------*/
     
@@ -83,7 +87,7 @@ text-decoration: none;
     
       &-btn01{
         @include hei-wid(65%,50px);
-        background-color:#d96dda;
+        background:linear-gradient(to right,#d96dda,#a05bdc);
         font-size: 1.1em;
         border-radius: 25PX 25PX;
         box-shadow: 2px 2px 7px#cacaca;
@@ -100,11 +104,12 @@ text-decoration: none;
     
     .nav-2{
     @include hei-wid(50%, 410px);
-    
     box-shadow:0px 3px 1px #cacaca;
+
+
     &-title3{
-      padding-left: 20PX;
-      margin-top: 40px;
+      padding-left: 60PX;
+      margin-top: 40px; 
       font-size: 1.4em;
       
       }
@@ -129,6 +134,10 @@ text-decoration: none;
       box-shadow: 8px 8px 8px #efefef;
       gap: 20px;
       
+        &:hover{
+    background-color:#FFF;
+    box-shadow: 10px 10px 12px #efefef9a;
+  }
       
     &-number{
       @include hei-wid (25px, 25px);
@@ -168,7 +177,7 @@ text-decoration: none;
       
     
     &-Stitle{
-      margin-left: 130PX;
+      margin-left: 70PX;
       padding-top: 40px;
       padding-bottom: 40px;
       font-size: 1.7em;
@@ -181,13 +190,11 @@ text-decoration: none;
       flex-wrap: wrap;
       gap: 25px;
     
-      a{
-        width: 40%
-      }
+     
     }
     
     .article{
-      @include hei-wid (100%, 260px);
+      @include hei-wid (45%, 260px);
       background-color: #fff;
       border: 1px solid #fff;
       border-radius: 20PX 20PX 20PX 20PX;
@@ -228,15 +235,51 @@ text-decoration: none;
         padding-left: 15px;
       }
     }
+
+    .fa-a{
+      position: relative;
+      display: inline-block;
+      bottom: 18%;
+      left: 42%;
+    }
     
     .fa-heart{
      position: relative;
-    height: 25px;
+    height: 30px;
      bottom: 18%;
      left: 42%;
-    color : #000
+    color: #000;
+    }
+ 
+    
+    
+    .heart{
+      position: absolute;
+      right: 1cm;
+     top: 0.001cm;
+      height: 30PX; 
+        color: transparent;
+       
+    
+    &:hover{
+      
+      animation-duration: 0.5s;
+     animation-name: couleur;
+     animation-fill-mode: forwards;
      
     }
+    }
+    
+    @keyframes couleur {
+      from{
+        color:transparent;
+      }
+      to{
+       color: #9356dc
+      }
+    }
+
+    /*-----FOOTER---------*/
     
     .footer{
       @include hei-wid (100%,150PX);

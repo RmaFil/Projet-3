@@ -9,7 +9,7 @@
   
 
 .Dtitle1{
-    @include hei-wid (100%,60PX);
+    @include hei-wid (60%,60PX);
     @include flex-center;
     margin-top: 10px;
  
@@ -22,8 +22,14 @@ left: 30px;
 height: 25px
     }
 
+    a{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
     &-H{
-        @include hei-wid (40%, 30px);
+        @include hei-wid (70%, 35px);
       }
 +.fran{
     @include hei-wid(100%, 260px);
@@ -73,6 +79,7 @@ gap: 20px
     @include flex-center;
     flex-wrap: wrap;
     justify-content: flex-start;
+   
 
     &-border{
       display: flex;
@@ -99,11 +106,48 @@ gap: 20px
     }
 }
 
+@keyframes apparition {
+  from{transform:translateY(50px); opacity: 0;
+   }
+50%{
+  transform:translateY(25px); opacity: 0;
+}
+
+  to{transform: translate(0px);opacity: 1;
+
+  }
+}
+
+
+/*--------FIN ANIMATION-------*/
+
 .art-cont{
 @include hei-wid (100%, 75px);
 background-color:#FFF;
 border-radius: 20px 20px;
 box-shadow: 5px 5px 3px #e7e7e7;
+animation: apparition 1s ease-in-out forwards ;
+opacity: 0;
+overflow: hidden;
+
+&:active>.cont2>.cont2-p +p{
+ margin-right: 80px;
+}
+
+&:active >.animation{
+ background-color: #99e2d0;
+ transform: scaleX(1);
+ 
+  &>.animation-rond{
+    background-color: #FFF;
+
+    &>.fa-check{
+      color: #99e2d0;transform: rotate(0deg);
+    }
+  }
+}
+
+
 
 &-p{
     font-weight: bold;
@@ -117,38 +161,100 @@ box-shadow: 5px 5px 3px #e7e7e7;
 .cont2{
     display: flex;
     justify-content: space-between;
-
+    white-space: nowrap;
+    overflow: hidden;
+     text-overflow: ellipsis;
     &-p{
         margin-left: 15px;
         padding-bottom: 15px;
         font-weight: 300;
+    
+       
+       
+       
         
         +p{
             margin-right: 20px;
             font-weight: bold;
+            transition: all 500ms ease-in-out;
+          
         }
     }
 }
 
+.art2{
+  animation: apparition 1s ease-in-out 0.2s forwards   ;
+}
+
+.art3{
+  animation: apparition 1s ease-in-out 0.5s  forwards ;
+}
+
+
+
+.animation{
+  @include hei-wid(130px,100%);
+  @include flex-center;
+  justify-content: flex-start;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+ background-color: transparent;
+ transform: scaleX(0);
+ transition: all 500ms ease-in-out;
+
+
+ &-rond{
+  @include flex-center;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  margin-left: 20px;
+  transition: all 500MS ease-in-out;
+
+
+  .fa-check{
+    color: transparent;
+height: 20px;
+transform: rotate(100deg);
+transition: all 500ms ease-in-out;
+ 
+  }
+ }
+}
+
+
+/*-------BTN-------------*/
 
 .cont-btn01{
 @include hei-wid (100%,150px);
 @include flex-center;
 
+a{
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
 .btn01{
     @include hei-wid(50%,50px);
-    background-color:#d96dda;
+    background:linear-gradient(to right,#d96dda,#a05bdc);
     font-size: 1.1em;
     border-radius: 25PX 25PX;
     box-shadow: 2px 2px 7px#cacaca;
     @include flex-center;
 
-    a{
+    >p{
       color: #fff;
       
     }
 }
 }
+
+
 
 /*------FOOTER---------*/
 
