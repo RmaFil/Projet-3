@@ -68,9 +68,29 @@ a {
     margin-left: 20px;
     font-family: "Shrikhand", Arial, georgia, serif;
   }
-  .Hcont .fa-heart {
-    height: 35px;
-    margin-right: 10px;
+  /*-----------COEUR------------*/
+  .heart-fa {
+    position: absolute;
+    right: 0, 1cm;
+    height: 30px;
+    color: #000;
+    transition: all 600ms ease-in;
+  }
+  .heart-fa:active {
+    color: transparent;
+  }
+  .heart-fa:active ~ .heart {
+    color: #9356dc;
+    background: #9356dc;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(1);
+  }
+  .heart {
+    color: #9356dc;
+    height: 30PX;
+    transition: transform 700ms ease-in-out;
+    transform: scale(0);
   }
   /*---------ARTICLE------------*/
   section .artspe {
@@ -99,6 +119,8 @@ a {
     margin-top: 0px;
     margin-left: 5px;
     border: 2px solid #99e2d0;
+    width: 50%;
+    color: #99e2d0;
   }
   .art a {
     width: 100%;
@@ -361,9 +383,29 @@ a {
     margin-left: 20px;
     font-family: "Shrikhand", Arial, georgia, serif;
   }
-  .Hcont .fa-heart {
-    height: 25px;
-    margin-right: 10px;
+  /*-----------COEUR------------*/
+  .heart-fa {
+    position: absolute;
+    right: 0, 1cm;
+    height: 30px;
+    color: #000;
+    transition: all 600ms ease-in;
+  }
+  .heart-fa:active {
+    color: transparent;
+  }
+  .heart-fa:active ~ .heart {
+    color: #9356dc;
+    background: #9356dc;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(1);
+  }
+  .heart {
+    color: #9356dc;
+    height: 30PX;
+    transition: transform 700ms ease-in-out;
+    transform: scale(0);
   }
   .art {
     width: 90%;
@@ -393,6 +435,8 @@ a {
     margin-top: 0px;
     margin-left: 5px;
     border: 2px solid #99e2d0;
+    width: 50%;
+    color: #99e2d0;
   }
   .art a {
     width: 100%;

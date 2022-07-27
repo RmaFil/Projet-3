@@ -65,12 +65,37 @@ gap: 20px
         margin-left: 20px;
         font-family: $font-title    ;
     }
+}
 
-    .fa-heart{
-        height: 25px;
-        margin-right: 10px;
-        
-    }
+
+/*-----------COEUR------------*/
+
+.heart-fa{
+  position: absolute;
+  right: 0,1cm;
+    height: 30px;
+ color: #000;
+ transition: all 600ms ease-in;
+
+
+ &:active{
+ color: transparent;
+}
+
+&:active ~.heart{
+  color: #9356dc;
+ background:#9356dc;
+ background-clip: text;
+ -webkit-background-clip: text;
+  transform: scale(1);
+}
+}
+.heart{
+  
+  color: #9356dc;
+  height: 30PX;
+ transition: transform 700ms ease-in-out;
+transform: scale(0);
 }
 
 
@@ -100,7 +125,10 @@ gap: 20px
       margin-top: 0px;
       margin-left: 5px;
       border: 2px solid #99e2d0;
+      width: 50%;
+      color: #99e2d0;
     }
+    
     a{
         width: 100%;
         display:block
