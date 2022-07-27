@@ -1,7 +1,7 @@
 
-@import "variables";
-@import "loading-page";
-@import "desktop";
+@import "../SCSS/variables";
+@import "../SCSS/loading-page";
+@import "desktop-acceuil";
 
 
 
@@ -232,7 +232,7 @@ a{
   }
 }
 
-
+/*---------COEUR----------*/
 
 .fa-a{
  position: relative;
@@ -241,8 +241,6 @@ a{
  left: 42%;
 
 }
-
-
 
 
 .heart-fa{
@@ -269,14 +267,9 @@ a{
 .heart{
   color: #9356dc;
   height: 30PX;
- transform: scale(0);
- transition: transform 700s ease-in-out,background-clip 1MS;
-
-
+ transition: transform 700ms ease-in-out;
+transform: scale(0);
 }
-
-
-
 
 
 /*------FOOTER---------*/

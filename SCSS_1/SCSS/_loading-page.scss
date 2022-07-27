@@ -1,52 +1,55 @@
-.loading{
- 
 
+
+
+.loading{
     @include hei-wid (100%,100VH);
     @include flex-center;
-    
-    
-    background:black;
+    background: linear-gradient(to right,#d5dce6,#bdc4ce);
   z-index: 999;
   top: 0;
   left: 0;
     position: fixed;
     animation: loading 1ms ease-out forwards 4s ;
 
+    .img{
+      @include hei-wid (100%,auto);
+      object-fit: contain;
+    }
+
    &-cont{
+    position: absolute;
  @include hei-wid (50%, 100%);
  @include flex-center;
  letter-spacing: 5px;
 
  
- 
-   
     &-p{
        @media screen and (max-width : 991px) {
          font-size: 3em;
        }
        font-size: 8em;
         font-family: $font-title;
-   animation: loading-2 2s ease infinite;
-    text-shadow: 0px 0px 5px green;
+   animation: loading-2 1.5s ease infinite;
+    text-shadow: 0px 0px 5px black;
 
   
     &:nth-child(3){
-      animation-delay: 0.2s;
+      animation-delay: 0.1s;
     }
     &:nth-child(4){
-      animation-delay: 0.2s;
+      animation-delay: 0.1s;
     }
     &:nth-child(5){
-      animation-delay: 0.4s;
+      animation-delay: 0.2s;
     }
     &:nth-child(6){
-      animation-delay: 0.4s;
+      animation-delay: 0.2s;
     }
     &:nth-child(7){
-      animation-delay: 0.4s;
+      animation-delay: 0.2s;
     }
     &:nth-child(8){
-      animation-delay: 0.4s;
+      animation-delay: 0.2s;
     }
     }
     
@@ -54,12 +57,24 @@
    }
 
    @keyframes loading-2 {
-    0%{color: black;text-shadow: 0px 0px 20px green;}
+    0%{ color: black;
+    }
 
-    50%{ text-shadow: none;}
+    25%{background:linear-gradient(to right,#d96dda,#a05bdc);
+      text-shadow: 0px 0px 20px ;
+    color: transparent;
+    background-clip: text;}
 
+    50%{color: black}
 
-    100%{text-shadow: 0px 0px 20px green;}
+    75%{background:linear-gradient(to right,#d96dda,#a05bdc);
+      text-shadow: 0px 0px 20px ;
+    color: transparent;
+    background-clip: text;
+  }
+  100%{ color: black;
+  }
+
    }
 
    @keyframes loading {
