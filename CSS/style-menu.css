@@ -503,6 +503,9 @@ a {
     margin-left: 15px;
     padding-bottom: 15px;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .cont2-p + p {
     margin-right: 20px;
