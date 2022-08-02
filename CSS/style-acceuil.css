@@ -355,6 +355,7 @@ a {
     display: inline-block;
     bottom: 18%;
     left: 42%;
+    cursor: pointer;
   }
   .fa-heart {
     position: relative;
@@ -362,6 +363,7 @@ a {
     bottom: 18%;
     left: 42%;
     color: #000;
+    cursor: pointer;
   }
   .heart {
     position: absolute;
@@ -369,6 +371,7 @@ a {
     top: 0.001cm;
     height: 30PX;
     color: transparent;
+    cursor: pointer;
   }
   .heart:hover {
     -webkit-animation-duration: 0.5s;
@@ -655,6 +658,7 @@ a {
     height: 30px;
     color: #000;
     transition: all 600ms ease-in;
+    cursor: pointer;
   }
   .heart-fa:active {
     color: transparent;
@@ -671,6 +675,7 @@ a {
     height: 30PX;
     transition: transform 700ms ease-in-out;
     transform: scale(0);
+    cursor: pointer;
   }
   /*------FOOTER---------*/
   .footer {
