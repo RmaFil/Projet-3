@@ -647,6 +647,7 @@ a {
     display: inline-block;
     bottom: 18%;
     left: 42%;
+    cursor: pointer;
   }
   .heart-fa {
     position: absolute;
